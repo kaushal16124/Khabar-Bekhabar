@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 
+import com.squareup.picasso.Picasso;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         String title="";
         String description="";
         String pubAt="";
+        String imgUrl="";
 
 
         final ArrayList<Word> words=new ArrayList<Word>();
@@ -85,7 +88,8 @@ public class MainActivity extends AppCompatActivity {
                     title =(String) JO.get("title");
                     description = (String) JO.getString("description");
                     pubAt = (String) JO.get("publishedAt");
-                    words.add(new Word(title, description,pubAt));
+                    imgUrl = (String) JO.getString("urlToImage");
+                    words.add(new Word(title, description,pubAt,imgUrl));
                 }
             }
             catch (MalformedURLException e){
