@@ -6,13 +6,15 @@ public class Word {
     private String mDescription;
     private String mPubAt;
     private String mImgUrl;
+    private String mUrl;
 
-    public Word(String title, String description, String pubAt, String imgUrl)
+    public Word(String title, String description, String pubAt, String imgUrl, String url)
     {
         mTitle=title;
         mDescription=description;
         mPubAt=pubAt;
         mImgUrl=imgUrl;
+        mUrl=url;
     }
 
 
@@ -30,5 +32,9 @@ public class Word {
 
     public String getImgUrl(){
         return mImgUrl;
+    }
+
+    public String getUrl1() {
+        return mUrl;
     }
 }

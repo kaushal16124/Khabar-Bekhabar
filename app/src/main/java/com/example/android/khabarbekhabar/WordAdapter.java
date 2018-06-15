@@ -58,7 +58,6 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         final ImageView imgUrlText = (ImageView)listItemView.findViewById(R.id.kbimg);
 
-
         Picasso.with(activity).load(currentWord.getImgUrl()).into(imgUrlText);
 
         View textContainer=(View)listItemView.findViewById(R.id.text_container);

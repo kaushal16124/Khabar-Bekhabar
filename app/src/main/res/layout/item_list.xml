@@ -10,7 +10,7 @@
         android:id="@+id/kbimg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <LinearLayout
+    <RelativeLayout
         android:layout_below="@+id/kbimg"
         android:id="@+id/text_container"
         android:layout_width="match_parent"
@@ -28,6 +28,8 @@
             tools:text="Ek"/>
 
         <TextView
+            android:id="@+id/t1"
+            android:layout_below="@id/text_1"
             android:textAppearance="?android:textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,6 +38,7 @@
 
         <TextView
 
+            android:layout_below="@id/t1"
             android:textAppearance="?android:textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,6 +46,8 @@
             tools:text="one"/>
 
         <TextView
+            android:layout_below="@id/text_2"
+            android:id="@+id/t2"
             android:textAppearance="?android:textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,6 +56,7 @@
 
         <TextView
 
+            android:layout_below="@id/t2"
             android:textAppearance="?android:textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,11 +65,14 @@
             android:textStyle="bold"/>
 
         <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text_3"
             android:textAppearance="?android:textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" "
+            android:text="Tap to view more details"
+            android:textColor="@color/colorPrimary"
             android:textStyle="bold" />
 
-    </LinearLayout>
+    </RelativeLayout>
 </RelativeLayout>
